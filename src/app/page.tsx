@@ -33,7 +33,6 @@ export default function Home() {
             src={banner}
             alt="T Shop banner"
             className="h-full object-cover"
-            priority
           />
           <div className="absolute inset-0 bg-gradient-to-r from-secondary via-transparent to-transparent" />
         </div>
