@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import { getWixServerClient } from "@/lib/wix-client.server";
 
 interface PageProps {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 // show product name on title

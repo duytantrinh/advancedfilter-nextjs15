@@ -9,7 +9,7 @@ import { notFound } from "next/navigation";
 import { Suspense } from "react";
 
 interface PageProps {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
   searchParams: { page?: string };
 }
 
