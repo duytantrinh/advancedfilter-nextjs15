@@ -10,7 +10,7 @@ import { Suspense } from "react";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
-  searchParams: { page?: string };
+  searchParams: Promise<{ page?: string }>;
 }
 
 export async function generateMetadata({
