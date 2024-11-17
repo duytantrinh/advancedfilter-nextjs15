@@ -19,8 +19,7 @@ export default function Layout({ children, params }: LayoutProps) {
   );
 }
 
-async function CollectionsLayout({ children, params }: LayoutProps) {
-  const { slug } = params;
+async function CollectionsLayout({ children, params: { slug } }: LayoutProps) {
   const collection = await getCollectionBySlug(
     await getWixServerClient(),
     slug,
